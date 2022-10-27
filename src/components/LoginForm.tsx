@@ -8,7 +8,7 @@ import {
   Input,
   InputContainer,
   InputContainerHeader,
-  InputLabel,
+  InputLabel
 } from "../utils/styles";
 import { LoginUserParams } from "../utils/types";
 
@@ -16,7 +16,7 @@ export const LoginForm = () => {
   const navigate = useNavigate();
 
   const mutation = useMutation(loginUser, {
-    onSuccess: () => navigate("/dashboard"),
+    onSuccess: () => navigate("/app/dashboard"),
     onError: () => toast.error("Could not login"),
   });
 
