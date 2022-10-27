@@ -53,3 +53,22 @@ export const Button = styled.button`
     background-color: #1168fe;
   }
 `;
+
+export const NavigationSidebar= styled.div`
+    height: 100%;
+    flex: 0 0 300px;
+`;
+
+export const NavigationHeader= styled.div`
+   height: 100px;
+`;
+
+export const NavigationItemsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 24px;
+  & div{
+    font-size: 20px;
+  }
+`;
