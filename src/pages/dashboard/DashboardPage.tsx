@@ -1,5 +1,5 @@
-import { Page } from "../../utils/styles";
+import { DashboardPageStyle } from "../../utils/styles";
 
 export const DashboardPage = () => {
-  return <Page>Dashboard</Page>;
+  return <DashboardPageStyle>123</DashboardPageStyle>;
 };

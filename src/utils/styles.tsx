@@ -6,6 +6,14 @@ export const Page = styled.div`
   display: flex;
 `;
 
+export const DashboardPageStyle = styled.div`
+  width: 100%;
+  background-color: #151718;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 48px;
+`
+
 export const CenteredPage = styled(Page)`
   display: flex;
   align-items: center;
@@ -60,14 +68,15 @@ export const NavigationSidebar= styled.div`
 `;
 
 export const NavigationHeader= styled.div`
-   height: 100px;
+  padding: 48px;
+
 `;
 
 export const NavigationItemsContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 18px 24px;
+  padding: 0 48px;
   & div{
     font-size: 20px;
   }
