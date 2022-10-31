@@ -6,7 +6,7 @@ export const Page = styled.div`
   display: flex;
 `;
 
-export const DashboardPageStyle = styled.div`
+export const PlanPageStyle = styled.div`
   width: 100%;
   background-color: #151718;
   border-top-left-radius: 50px;
@@ -81,3 +81,8 @@ export const NavigationItemsContainer = styled.div`
     font-size: 20px;
   }
 `;
+
+export const PlansActionBarContainer = styled.div`
+    background-color: #080909
+    
+`
