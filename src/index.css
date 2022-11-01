@@ -2,7 +2,7 @@ html,
 body {
   background-color: #1e1f23;
   color: #fff;
-  font-family: "Inter";
+  font-family: 'Inter';
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,4 +17,87 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.react-datepicker__header {
+  background-color: #151718 !important;
+  color: #fff;
+  border-bottom: 1px solid #ffffff26 !important;
+  padding-top: 20px !important;
+}
+
+.react-datepicker__navigation {
+  padding: 30px !important;
+}
+
+.react-datepicker__day-names {
+  padding: 10px 10px 0 10px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header,
+.react-datepicker__day-name {
+  color: #fff !important;
+  font-family: 'Inter';
+}
+
+.react-datepicker__month {
+  background-color: #151718 !important;
+  border-top: 1px solid rgba(61, 61, 61, 0.312) !important;
+  margin: 0 !important;
+  padding: 10px;
+}
+
+.react-datepicker__day-name {
+  padding: 4px;
+}
+
+.react-datepicker {
+  border-radius: 10px !important;
+  border: 2px solid #ffffff26 !important;
+  overflow: hidden;
+  background-color: #151718 !important;
+}
+
+.react-datepicker__day {
+  padding: 4px;
+  color: #fff !important;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: rgb(14, 14, 14) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: rgb(14, 14, 14) !important;
+}
+
+.react-datepicker__input-container input {
+  border: none !important;
+  outline: none !important;
+  cursor: pointer;
+  padding: 18px;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #101010;
+  color: #fff;
+  width: 100%;
+}
+.react-datepicker__input-container {
+  border: 1px solid #ffffff26;
+  border-radius: 8px;
+}
+
+.react-datepicker__day--disabled {
+  opacity: 0.2;
 }
