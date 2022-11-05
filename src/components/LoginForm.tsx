@@ -16,7 +16,7 @@ export const LoginForm = () => {
   const navigate = useNavigate();
 
   const mutation = useMutation(loginUser, {
-    onSuccess: () => navigate("/app/dashboard"),
+    onSuccess: () => navigate("/app/plans"),
     onError: () => toast.error("Could not login"),
   });
 

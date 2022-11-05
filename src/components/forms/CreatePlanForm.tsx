@@ -5,7 +5,7 @@ import {
   Input,
   InputContainer,
   InputContainerHeader,
-  InputLabel
+  InputLabel,
 } from '../../utils/styles'
 
 export const CreatePlanForm = () => {
