@@ -1,4 +1,5 @@
 import { Cross } from 'akar-icons'
+import { motion } from 'framer-motion'
 import { Dispatch, FC, SetStateAction } from 'react'
 import { ModalContent, ModalHeader, ModalOverlay } from '../../utils/styles'
 import { CreatePlanForm } from '../forms/CreatePlanForm'
@@ -11,6 +12,7 @@ type Props = {
 export const CreatePlanModal: FC<Props> = ({ setShowModal }) => {
   return (
     <ModalOverlay>
+      <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} transition={{duration: 0.5}}>
       <ModalContainer>
         <ModalHeader>
           <div>Create Plan</div>
@@ -25,6 +27,7 @@ export const CreatePlanModal: FC<Props> = ({ setShowModal }) => {
           <CreatePlanForm />
         </ModalContent>
       </ModalContainer>
+      </motion.div>
     </ModalOverlay>
   )
 }
