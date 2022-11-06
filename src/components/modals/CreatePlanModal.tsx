@@ -6,28 +6,31 @@ import { CreatePlanForm } from '../forms/CreatePlanForm'
 import { ModalContainer } from './ModalsContainer'
 
 type Props = {
+  showModal: boolean
   setShowModal: Dispatch<SetStateAction<boolean>>
 }
 
-export const CreatePlanModal: FC<Props> = ({ setShowModal }) => {
+export const CreatePlanModal: FC<Props> = ({ showModal, setShowModal }) => {
   return (
     <ModalOverlay>
-      <motion.div initial={{ opacity: 0, scale: 0.5}} animate={{ opacity: 1, scale: 1}} transition={{duration: 0.5}}>
-      <ModalContainer>
-        <ModalHeader>
-          <div>Create Plan</div>
-          <Cross
-            size={16}
-            strokeWidth={4}
-            cursor="pointer"
-            onClick={() => setShowModal(false)}
-          />
-        </ModalHeader>
-        <ModalContent>
-          <CreatePlanForm />
-        </ModalContent>
-      </ModalContainer>
-      </motion.div>
+        {showModal && (
+          <motion.div initial={{opacity: 0, scale: 0.3}} animate={{opacity: 1, scale: 1}} transition={{ duration: 0.5}} exit={{ opacity:0 , scale: 0}}>
+          <ModalContainer>
+            <ModalHeader>
+              <div>Create Plan</div>
+              <Cross
+                size={16}
+                strokeWidth={4}
+                cursor="pointer"
+                onClick={() => setShowModal(false)}
+              />
+            </ModalHeader>
+            <ModalContent>
+              <CreatePlanForm />
+            </ModalContent>
+          </ModalContainer>
+          </motion.div>
+        )}
     </ModalOverlay>
   )
 }
