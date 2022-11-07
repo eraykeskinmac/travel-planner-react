@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from 'axios'
-import { LoginUserParams, RegisterUserParams, User } from './types'
+import { CreatePlanParams, LoginUserParams, RegisterUserParams, User } from './types'
 
 const axiosClient = axios.create({
   baseURL: 'http://localhost:3001/api/',
@@ -17,6 +17,6 @@ export const loginUser = (data: LoginUserParams) =>
 
 export const getAuthUser = () => axiosClient.post<User>('/auth/status', config)
 
-export const createPlan = () => axiosClient.post('/plans', config)
+export const createPlanAPI = (data: CreatePlanParams) => axiosClient.post('/plans', data, config)
 
 

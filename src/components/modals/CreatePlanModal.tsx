@@ -26,7 +26,7 @@ export const CreatePlanModal: FC<Props> = ({ showModal, setShowModal }) => {
               />
             </ModalHeader>
             <ModalContent>
-              <CreatePlanForm />
+              <CreatePlanForm setShowModal={setShowModal} />
             </ModalContent>
           </ModalContainer>
           </motion.div>

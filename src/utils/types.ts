@@ -18,5 +18,16 @@ export type Plan = {
   date: string
   title: string
   description: string
-  
+  users: User[]
+}
+
+export type CreatePlanParams = {
+  title: string
+  description: string
+  date:string
+}
+
+export type CreatePlanFormFields = {
+  title: string
+  description: string
 }
